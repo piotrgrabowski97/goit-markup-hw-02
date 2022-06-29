@@ -3,7 +3,8 @@ body {
   width: 1600px;
   background: var(--white-color);
   color: var(--black-color);
-  position: relative;
+  position: absolute;
+  margin: 0;
 }
 
 :root {
@@ -23,8 +24,6 @@ body {
   position: absolute;
   width: 1600px;
   height: 80px;
-  left: 0px;
-  top: 0px;
   border-bottom: 1px solid var(--border-header);
 }
 
@@ -72,6 +71,8 @@ body {
 
 .logo-part-first {
   position: absolute;
+  width: 145px;
+  height: 31px;
   left: 215px;
   top: 24px;
   font-family: 'Raleway';
@@ -102,6 +103,7 @@ body {
 
 .navigation {
   position: absolute;
+  display: inline-block;
   width: 254px;
   height: 16px;
   left: 453px;
@@ -109,11 +111,8 @@ body {
 }
 
 .agency-link {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  position: relative;
+  float: left;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -122,17 +121,17 @@ body {
 }
 
 .portfolio-link {
-  position: absolute;
-  left: 99px;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  position: relative;
+  margin-left: 46px;
+  margin-right: 46px;
+  float: left;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   color: var(--black-color);
   text-decoration: none;
 }
+
 .email-header:hover,
 .email-header:focus,
 .email-footer:hover,
@@ -153,11 +152,8 @@ body {
 }
 
 .contact-link {
-  position: absolute;
-  left: 203px;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  position: relative;
+  float: left;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -167,6 +163,8 @@ body {
 
 .email-header {
   position: absolute;
+  width: 135px;
+  height: 16px;
   left: 1078px;
   top: 32px;
   font-weight: 500;
@@ -264,6 +262,8 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .secondary-header {
