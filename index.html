@@ -14,15 +14,13 @@
     <title>WebStudio</title>
   </head>
 
-  <body>
+  <body class="container">
     <header class="header">
-      <a class="logo-part-first" href="index.html"
-        >Web<span class="logo-part-second">Studio</span>
-      </a>
+      <a class="logo" href="index.html">Web<span class="logo-span">Studio</span> </a>
       <nav class="navigation">
-        <ul class="list">
+        <ul class="list nav-list">
           <li>
-            <a class="agency-link" href="/agency">Agencja</a>
+            <a class="agency-link" href="index.html">Agencja</a>
           </li>
           <li>
             <a class="portfolio-link" href="portfolio.html">Portfolio</a>
@@ -32,7 +30,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="list">
+      <ul class="list contact-list">
         <li>
           <a class="email-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
@@ -43,38 +41,38 @@
     </header>
 
     <main>
-      <article class="element-first">
-        <h1 class="element-first-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button class="element-first-button" type="button">Zamów usługę</button>
+      <article class="hero">
+        <h1 class="hero-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <button class="hero-button" type="button" onclick="alert('Elo')">Zamów usługę</button>
       </article>
 
-      <div class="element-second">
-        <section>
-          <ul class="list">
+      <div class="main">
+        <section class="main-text">
+          <ul class="list main-text-list">
             <li>
-              <h4 class="secondary-header sh-first">LOREM IPSUM</h4>
-              <p class="secondary-text sh-first">
+              <h4 class="main-header-item main-first">LOREM IPSUM</h4>
+              <p class="main-text-item">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <h4 class="secondary-header sh-second">LOREM IPSUM</h4>
-              <p class="secondary-text sh-second">
+              <h4 class="main-header-item main-second">LOREM IPSUM</h4>
+              <p class="main-text-item">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <h4 class="secondary-header sh-third">LOREM IPSUM</h4>
-              <p class="secondary-text sh-third">
+              <h4 class="main-header-item main-third">LOREM IPSUM</h4>
+              <p class="main-text-item">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <h4 class="secondary-header sh-fourth">LOREM IPSUM</h4>
-              <p class="secondary-text sh-fourth">
+              <h4 class="main-header-item">LOREM IPSUM</h4>
+              <p class="main-text-item">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
@@ -83,8 +81,8 @@
         </section>
 
         <section>
-          <h2 class="element-second-header">Czym się zajmujemy</h2>
-          <ul class="list">
+          <h2 class="main-header">Czym się zajmujemy</h2>
+          <ul class="list main-image-list">
             <li>
               <img
                 class="secondary-image-first"
@@ -116,52 +114,52 @@
         </section>
       </div>
 
-      <section class="element-third">
-        <h2 class="element-third-header">Nasz zespół</h2>
-        <ul class="list">
-          <li class="card card-first">
+      <section class="team">
+        <h2 class="team-header">Nasz zespół</h2>
+        <ul class="list team-list">
+          <li class="team-card">
             <img
-              class="card-image"
+              class="team-card-image"
               src="./images/img4.jpg"
               alt="Picture of John Doe"
               width="270"
               height="260"
             />
-            <p class="card-name">John Doe</p>
-            <p class="card-description">Product Designer</p>
+            <p class="team-card-name">John Doe</p>
+            <p class="team-card-description">Product Designer</p>
           </li>
-          <li class="card card-second">
+          <li class="team-card team-card-second">
             <img
-              class="card-image"
+              class="team-card-image"
               src="./images/img5.jpg"
               alt="Picture of John Doe"
               width="270"
               height="260"
             />
-            <p class="card-name">John Doe</p>
-            <p class="card-description">Frontend Developer</p>
+            <p class="team-card-name">John Doe</p>
+            <p class="team-card-description">Frontend Developer</p>
           </li>
-          <li class="card card-third">
+          <li class="team-card team-card-third">
             <img
-              class="card-image"
+              class="team-card-image"
               src="./images/img6.jpg"
               alt="Picture of John Doe"
               width="270"
               height="260"
             />
-            <p class="card-name">John Doe</p>
-            <p class="card-description">Marketing</p>
+            <p class="team-card-name">John Doe</p>
+            <p class="team-card-description">Marketing</p>
           </li>
-          <li class="card card-fourth">
+          <li class="team-card team-card-fourth">
             <img
-              class="card-image"
+              class="team-card-image"
               src="./images/img7.jpg"
               alt="Picture of John Doe"
               width="270"
               height="260"
             />
-            <p class="card-name">John Doe</p>
-            <p class="card-description">UI Designer</p>
+            <p class="team-card-name">John Doe</p>
+            <p class="team-card-description">UI Designer</p>
           </li>
         </ul>
       </section>
@@ -169,19 +167,19 @@
 
     <footer class="footer">
       <ul class="list">
-        <li>
-          <a class="logo-part-first-footer" href="index.html"
-            >Web<span class="logo-part-second-footer">Studio</span>
+        <li class="footer-logo-item">
+          <a class="footer-logo" href="index.html"
+            >Web<span class="footer-logo-span">Studio</span>
           </a>
         </li>
-        <li>
-          <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
+        <li class="footer-address-item">
+          <address class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</address>
         </li>
-        <li>
-          <a class="email-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <li class="footer-email-item">
+          <a class="footer-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li>
-          <a class="phone-footer" href="tel:+48111111111">+48 111 111 111</a>
+        <li class="footer-phone-item">
+          <a class="footer-phone" href="tel:+48111111111">+48 111 111 111</a>
         </li>
       </ul>
     </footer>

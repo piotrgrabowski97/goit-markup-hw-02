@@ -13,15 +13,13 @@
     />
     <title>Portfolio</title>
   </head>
-  <body>
+  <body class="container">
     <header class="header">
-      <a class="logo-part-first" href="index.html"
-        >Web<span class="logo-part-second">Studio</span>
-      </a>
+      <a class="logo" href="index.html">Web<span class="logo-span">Studio</span> </a>
       <nav class="navigation">
-        <ul class="list">
+        <ul class="list nav-list">
           <li>
-            <a class="agency-link" href="/agency">Agencja</a>
+            <a class="agency-link" href="index.html">Agencja</a>
           </li>
           <li>
             <a class="portfolio-link" href="portfolio.html">Portfolio</a>
@@ -31,7 +29,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="list">
+      <ul class="list contact-list">
         <li>
           <a class="email-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
@@ -41,119 +39,158 @@
       </ul>
     </header>
 
-    <main class="portfolio">
+    <main>
       <div>
-        <ul class="list">
+        <ul class="list portfolio-button-list">
           <li>
-            <button class="portfolio-button-all portfolio-button" type="button">Wszystkie</button>
+            <button class="portfolio-button" type="button">Wszystkie</button>
           </li>
           <li>
-            <button class="portfolio-button-pages portfolio-button" type="button">Strony</button>
+            <button class="portfolio-button" type="button">Strony</button>
           </li>
           <li>
-            <button class="portfolio-button-apps portfolio-button" type="button">Aplikacje</button>
+            <button class="portfolio-button" type="button">Aplikacje</button>
           </li>
           <li>
-            <button class="portfolio-button-design portfolio-button" type="button">Design</button>
+            <button class="portfolio-button" type="button">Design</button>
           </li>
           <li>
-            <button class="portfolio-button-marketing portfolio-button" type="button">
-              Marketing
-            </button>
+            <button class="portfolio-button" type="button">Marketing</button>
           </li>
         </ul>
       </div>
-      <div>
-        <ul class="list">
-          <li class="pcard-a">
-            <img src="./images/img-port1.jpg" alt="Technocrack Page" width="370" height="294" />
-            <p class="pcard-name">Technocrack</p>
-            <p class="pcard-description">Strona internetowa</p>
+      <div class="portfolio-items">
+        <ul class="list portfolio-items-list">
+          <li>
+            <figure class="portfolio-card">
+              <img src="./images/img-port1.jpg" alt="Technocrack Page" width="370" height="294" />
+              <figcaption class="portfolio-card-text">
+                <p class="portfolio-card-name">Technocrack</p>
+                <p class="portfolio-card-description">Strona internetowa</p>
+              </figcaption>
+            </figure>
           </li>
-          <li class="pcard-b">
-            <img
-              src="./images/img-port2.jpg"
-              alt="New Orlean vs Golden Star Design"
-              width="370"
-              height="294"
-            />
-            <p class="pcard-name">Grafika New Orlean vs Golden Star</p>
-            <p class="pcard-description">Design</p>
+          <li>
+            <figure class="portfolio-card">
+              <img
+                src="./images/img-port2.jpg"
+                alt="New Orlean vs Golden Star Design"
+                width="370"
+                height="294"
+              />
+              <figcaption class="portfolio-card-text">
+                <p class="portfolio-card-name">Grafika New Orlean vs Golden Star</p>
+                <p class="portfolio-card-description">Design</p>
+              </figcaption>
+            </figure>
           </li>
-          <li class="pcard-c">
-            <img
-              src="./images/img-port3.jpg"
-              alt="Seafood Restaurant App"
-              width="370"
-              height="294"
-            />
-            <p class="pcard-name">Restauracja Seafood</p>
-            <p class="pcard-description">Aplikacja</p>
+          <li>
+            <figure class="portfolio-card">
+              <img
+                src="./images/img-port3.jpg"
+                alt="Seafood Restaurant App"
+                width="370"
+                height="294"
+              />
+              <figcaption class="portfolio-card-text">
+                <p class="portfolio-card-name">Restauracja Seafood</p>
+                <p class="portfolio-card-description">Aplikacja</p>
+              </figcaption>
+            </figure>
           </li>
-          <li class="pcard-d">
-            <img
-              src="./images/img-port4.jpg"
-              alt="Project Prime Headphones"
-              width="370"
-              height="294"
-            />
-            <p class="pcard-name">Projekt Prime</p>
-            <p class="pcard-description">Marketing</p>
+          <li>
+            <figure class="portfolio-card">
+              <img
+                src="./images/img-port4.jpg"
+                alt="Project Prime Headphones"
+                width="370"
+                height="294"
+              />
+              <figcaption class="portfolio-card-text">
+                <p class="portfolio-card-name">Projekt Prime</p>
+                <p class="portfolio-card-description">Marketing</p>
+              </figcaption>
+            </figure>
           </li>
-          <li class="pcard-e">
-            <img src="./images/img-port5.jpg" alt="Project Boxes App" width="370" height="294" />
-            <p class="pcard-name">Projekt Boxes</p>
-            <p class="pcard-description">Aplikacja</p>
+          <li>
+            <figure class="portfolio-card">
+              <img src="./images/img-port5.jpg" alt="Project Boxes App" width="370" height="294" />
+              <figcaption class="portfolio-card-text">
+                <p class="portfolio-card-name">Projekt Boxes</p>
+                <p class="portfolio-card-description">Aplikacja</p>
+              </figcaption>
+            </figure>
           </li>
-          <li class="pcard-f">
-            <img
-              src="./images/img-port6.jpg"
-              alt="Inspiration has no Borders Page"
-              width="370"
-              height="294"
-            />
-            <p class="pcard-name">Inspiration has no Borders</p>
-            <p class="pcard-description">Strona internetowa</p>
+          <li>
+            <figure class="portfolio-card">
+              <img
+                src="./images/img-port6.jpg"
+                alt="Inspiration has no Borders Page"
+                width="370"
+                height="294"
+              />
+              <figcaption class="portfolio-card-text">
+                <p class="portfolio-card-name">Inspiration has no Borders</p>
+                <p class="portfolio-card-description">Strona internetowa</p>
+              </figcaption>
+            </figure class="portfolio-card">
           </li>
-          <li class="pcard-g">
-            <img
-              src="./images/img-port7.jpg"
-              alt="Limited Edition Magazine Design"
-              width="370"
-              height="294"
-            />
-            <p class="pcard-name">Magazyn Limited Edition</p>
-            <p class="pcard-description">Design</p>
+          <li>
+            <figure class="portfolio-card">
+              <img
+                src="./images/img-port7.jpg"
+                alt="Limited Edition Magazine Design"
+                width="370"
+                height="294"
+              />
+              <figcaption class="portfolio-card-text">
+                <p class="portfolio-card-name">Magazyn Limited Edition</p>
+                <p class="portfolio-card-description">Design</p>
+              </figcaption>
+            </figure>
           </li>
-          <li class="pcard-h">
-            <img src="./images/img-port8.jpg" alt="Project LAB Label" width="370" height="294" />
-            <p class="pcard-name">Projekt LAB</p>
-            <p class="pcard-description">Marketing</p>
+          <li>
+            <figure class="portfolio-card">
+              <img src="./images/img-port8.jpg" alt="Project LAB Label" width="370" height="294" />
+              <figcaption class="portfolio-card-text">
+                <p class="portfolio-card-name">Projekt LAB</p>
+                <p class="portfolio-card-description">Marketing</p>
+              </figcaption>
+            </figure>
           </li>
-          <li class="pcard-i">
-            <img src="./images/img-port9.jpg" alt="Growing Business App" width="370" height="294" />
-            <p class="pcard-name">Growing Business</p>
-            <p class="pcard-description">Aplikacja</p>
+          <li>
+            <figure class="portfolio-card">
+              <img
+                src="./images/img-port9.jpg"
+                alt="Growing Business App"
+                width="370"
+                height="294"
+              />
+              <figcaption class="portfolio-card-text">
+                <p class="portfolio-card-name">Growing Business</p>
+                <p class="portfolio-card-description">Aplikacja</p>
+              </figcaption>
+            </figure>
           </li>
         </ul>
       </div>
     </main>
 
-    <footer class="footer-portfolio">
+    <footer class="footer">
       <ul class="list">
-        <li>
-          <a class="logo-part-first-footer" href="index.html"
-            >Web<span class="logo-part-second-footer">Studio</span>
+        <li class="footer-logo-item">
+          <a class="footer-logo" href="index.html"
+            >Web<span class="footer-logo-span">Studio</span>
           </a>
         </li>
-        <li>
-          <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
+        <li class="footer-address-item">
+          <address class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</address>
         </li>
-        <li>
-          <a class="email-footer-portfolio" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <li class="footer-email-item">
+          <a class="portfolio-footer-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li>
-          <a class="phone-footer" href="tel:+48111111111">+48 111 111 111</a>
+        <li class="footer-phone-item">
+          <a class="footer-phone" href="tel:+48111111111">+48 111 111 111</a>
         </li>
       </ul>
     </footer>
