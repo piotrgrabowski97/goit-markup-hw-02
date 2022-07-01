@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-family: "Roboto", "Raleway", sans-serif;
   background: var(--white-color);
   color: var(--black-color);
   width: 1600px;
@@ -61,7 +61,7 @@ body {
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.2;
   color: var(--blue-color);
@@ -351,7 +351,7 @@ body {
 }
 
 .footer-logo {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 26px;
   line-height: 1.2;
   color: var(--blue-color);
@@ -445,21 +445,28 @@ body {
   padding: 0;
   padding-left: 215px;
   padding-right: 185px;
-  padding-bottom: 94px;
+  padding-bottom: 64px;
 }
 
 .portfolio-card {
   margin: 0;
   margin-right: 30px;
+  margin-bottom: 30px;
   width: 370px;
   height: 404px;
+}
+
+.portfolio-image {
+  display: block;
 }
 
 .portfolio-card-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  margin: 20px 24px 4px 24px;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 24px;
   color: var(--secondary-header-color);
   letter-spacing: 0.06em;
 }
@@ -467,9 +474,17 @@ body {
 .portfolio-card-description {
   font-size: 16px;
   line-height: 1.9;
-  margin: 4px 24px 20px 24px;
+  margin: 0;
+  padding-left: 24px;
+  padding-bottom: 20px;
   color: var(--mediumgrey-color);
   letter-spacing: 0.03em;
+}
+
+.portfolio-card-text {
+  border-bottom: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
 }
 
 .portfolio-footer-email {
