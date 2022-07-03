@@ -1,11 +1,8 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
-  background: var(--white-color);
+  background: var(--background);
   color: var(--black-color);
   width: 1600px;
-  margin: 0px;
-  padding: 0px;
-  justify-content: center;
 }
 
 :root {
@@ -19,6 +16,7 @@ body {
   --secondary-header-color: #212121;
   --border-header: #ececec;
   --border: #eeeeee;
+  --background: #202020;
 }
 
 .email-header:hover,
@@ -40,6 +38,11 @@ body {
   color: var(--blue-color);
 }
 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -47,16 +50,24 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding: 94px 0px 94px 0px;
 }
 
 /* header */
 
 .header {
   width: 1600px;
-  height: 80px;
   border-bottom: 1px solid var(--border-header);
+  background-color: var(--white-color);
+}
+
+.header-flex {
   display: flex;
 }
 
@@ -66,9 +77,9 @@ body {
   line-height: 1.2;
   color: var(--blue-color);
   text-decoration: none;
-  padding-top: 24px;
-  padding-left: 215px;
   letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-span {
@@ -76,19 +87,17 @@ body {
 }
 
 .navigation {
-  display: inline;
-  width: 254px;
   padding-left: 93px;
   padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-list {
-  padding: 0;
-  margin: 0;
+  display: flex;
+  gap: 46px;
 }
 
 .agency-link {
-  float: left;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -98,9 +107,6 @@ body {
 }
 
 .portfolio-link {
-  margin-left: 46px;
-  margin-right: 46px;
-  float: left;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -110,7 +116,6 @@ body {
 }
 
 .contact-link {
-  float: left;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -120,14 +125,14 @@ body {
 }
 
 .contact-list {
-  width: 295px;
-  padding-top: 32px;
+  display: flex;
   padding-left: 371px;
-  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  gap: 50px;
 }
 
 .email-header {
-  float: left;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -137,8 +142,6 @@ body {
 }
 
 .phone-header {
-  float: left;
-  margin-left: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -147,7 +150,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* first section */
+/* hero */
 
 .hero {
   width: 1600px;
@@ -166,7 +169,7 @@ body {
   text-transform: uppercase;
   margin: auto;
   padding-top: 200px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .hero-button {
@@ -191,17 +194,10 @@ body {
 
 .main {
   width: 1600px;
-  margin-top: 94px;
-}
-
-.main-text {
-  padding-left: 215px;
-  padding-right: 215px;
+  background-color: var(--white-color);
 }
 
 .main-header-item {
-  width: 270px;
-  height: 16px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -212,30 +208,21 @@ body {
 }
 
 .main-text-list {
-  column-count: 4;
-  margin: 0;
-  padding: 0;
-}
-
-.main-first {
-  margin-right: 30px;
-}
-
-.main-second {
-  margin-right: 30px;
-}
-
-.main-third {
-  margin-right: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .main-text-item {
-  width: 270px;
   font-size: 14px;
   line-height: 1.7;
   color: var(--mediumgrey-color);
-  margin-bottom: 0;
   letter-spacing: 0.03em;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.main-section {
+  padding-top: 0;
 }
 
 .main-header {
@@ -245,33 +232,21 @@ body {
   text-align: center;
   color: var(--secondary-header-color);
   letter-spacing: 0.03em;
-  margin-top: 94px;
-  margin-bottom: 50px;
-}
-
-.secondary-image-first {
-  margin-right: 30px;
-}
-
-.secondary-image-second {
-  margin-right: 30px;
+  padding-bottom: 50px;
+  margin: 0;
 }
 
 .main-image-list {
-  display: inline-flex;
-  margin: 0;
-  padding-left: 215px;
-  padding-right: 215px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 /* third section */
 
 .team {
-  margin: 0;
   width: 1600px;
   height: 648px;
-  left: 0px;
-  top: 1449px;
   background: var(--lightgrey-color);
 }
 
@@ -282,18 +257,14 @@ body {
   text-align: center;
   color: var(--secondary-header-color);
   letter-spacing: 0.03em;
-  margin-top: 94px;
-  margin-bottom: 0;
-  padding-top: 94px;
+  margin: 0;
   padding-bottom: 50px;
 }
 
 .team-list {
-  display: inline-flex;
-  padding-left: 215px;
-  padding-right: 215px;
-  padding-bottom: 94px;
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .team-card {
@@ -324,18 +295,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.team-card-second {
-  margin-left: 30px;
-}
-
-.team-card-third {
-  margin-left: 30px;
-}
-
-.team-card-fourth {
-  margin-left: 30px;
-}
-
 /* footer */
 
 .footer {
@@ -347,7 +306,6 @@ body {
 .footer-logo-item {
   padding-top: 60px;
   padding-bottom: 20px;
-  padding-left: 215px;
 }
 
 .footer-logo {
@@ -372,7 +330,6 @@ body {
 }
 
 .footer-address-item {
-  padding-left: 215px;
   padding-bottom: 9px;
 }
 
@@ -385,7 +342,6 @@ body {
 }
 
 .footer-email-item {
-  padding-left: 215px;
   padding-bottom: 9px;
 }
 
@@ -397,19 +353,17 @@ body {
   color: var(--lightgrey-opacity-color);
 }
 
-.footer-phone-item {
-  padding-left: 215px;
-}
-
 /* portfolio */
+
+.portfolio-main {
+  background-color: var(--white-color);
+}
 
 .portfolio-button-list {
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 50px;
-  margin-left: 510px;
-  margin-right: 510px;
-  padding: 0;
+  justify-content: center;
+  padding-bottom: 50px;
+  gap: 8px;
 }
 
 .portfolio-button {
@@ -426,7 +380,6 @@ body {
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
-  margin-right: 8px;
   border: 0px;
 }
 
@@ -439,21 +392,12 @@ body {
 .portfolio-items-list {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 33.333333%;
-  width: 1200px;
-  margin: 0;
-  padding: 0;
-  padding-left: 215px;
-  padding-right: 185px;
-  padding-bottom: 64px;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .portfolio-card {
   margin: 0;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  width: 370px;
-  height: 404px;
 }
 
 .portfolio-image {
